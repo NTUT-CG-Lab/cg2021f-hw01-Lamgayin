@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>HW01-110598403-林嘉欣three.js webgl - loader - ttf</title>
+		<title>three.js webgl - loader - ttf</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="main.css">
@@ -180,8 +180,8 @@
 				scene.add( circle );
 
 				//圓球ply模型
-				var geometry2 = new THREE.SphereGeometry(30, 30, 400);  
-				var material2 = new THREE.MeshLambertMaterial({color: 0x00FFFF});  
+				var geometry2 = new THREE.SphereGeometry(30, 30, 40);  
+				var material2 = new THREE.MeshLambertMaterial({color: 0x00FFFF,wireframe:true});  
 				mesh2 = new THREE.Mesh(geometry2, material2); 
 				mesh2.position = new THREE.Vector3(0, -220, 0);
 				scene.add(mesh2);
